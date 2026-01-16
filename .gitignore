@@ -1,0 +1,11 @@
+.idea
+.vscode
+
+# ignore node_modules
+node_modules
+
+# ignore env
+.env
+.env.local
+.env.development
+.env.production

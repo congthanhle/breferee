@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@plugin "@midudev/tailwind-animations";
+
+.ant-typography,
+.ant-form-item-control-input-content,
+.ant-checkbox-wrapper,
+.ant-btn,
+.ant-menu,
+.ant-input,
+.ant-input-number-input,
+.ant-radio-wrapper,
+.ant-modal-content,
+.ant-form-item-label,
+.ant-form-item-explain-error {
+  @apply font-sans;
+}
+
+.ant-form-item-label > label {
+  @apply text-base text-white !important;
+}
+
+.ant-form-item-label {
+  @apply py-0 !important;
+}
+
+.ant-form-item {
+  @apply mt-3 !important;
+}
+.ant-input-disabled {
+  @apply bg-white !important;
+}
+
+.ant-select {
+  @apply h-12 w-48 border-black !important;
+}
+
+.ant-select-selector {
+  @apply rounded-l-full px-4 text-base border border-black !important;
+}
+
+.custom-select > .ant-select-selector {
+  @apply border-none !important;
+}
+
+.ant-input:focus,
+.ant-input:hover,
+.ant-input-focused {
+  @apply outline-none border-none shadow-none !important;
+}
+
+.custom-input {
+  @apply bg-[#8C000480] text-white !important;
+}
+
+.custom-input:focus,
+.custom-input:hover,
+.custom-input-focused {
+  @apply bg-[#8C000480] !important;
+}
+
+.ant-input {
+  @apply focus:outline-none focus:shadow-none !important;
+}
+
+.custom-placeholder::placeholder {
+  @apply text-white !important;
+}
+
+.zaui-sheet-content {
+  @apply overflow-visible !important;
+}
+
+.ant-form-item-explain-error {
+  @apply text-sm text-primary pt-2 !important;
+}
+
+.ant-modal-content {
+  @apply bg-white bg-opacity-0 shadow-none px-4 !important;
+}
+
+.ant-tag-red {
+  @apply bg-[#D31F251A] !important;
+}
+
+.ant-select-dropdown {
+  @apply w-[calc(90%)] max-w-md !important;
+}
+
+.ant-select-item-option-selected {
+  @apply bg-primary bg-opacity-40 !important;
+}
