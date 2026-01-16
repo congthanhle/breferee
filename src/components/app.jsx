@@ -5,10 +5,7 @@ import viVN from 'antd/locale/vi_VN';
 import dayjs from 'dayjs';
 import 'dayjs/locale/vi';
 import { Route, Routes } from 'react-router-dom';
-
 import { App, SnackbarProvider, ZMPRouter } from 'zmp-ui';
-import backgroundImage from '@/assets/images/backgrounds/main.png';
-import BottomNavigation from '@/components/molecules/Layout/BottomNavigation';
 import Loading from '@/components/atoms/Loading';
 import CustomSheet from '@/components/atoms/Sheet';
 
@@ -19,7 +16,7 @@ const MyApp = () => {
     <App>
       <ConfigProvider locale={viVN}>
         <SnackbarProvider>
-          <div style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}  className="min-h-screen">
+          <div className="min-h-screen">
             <Loading/>
             <ZMPRouter >
               <Routes>
@@ -36,7 +33,6 @@ const MyApp = () => {
                     }
                   />)}
               </Routes>
-              <BottomNavigation />
             </ZMPRouter>
             <CustomSheet />
           </div>

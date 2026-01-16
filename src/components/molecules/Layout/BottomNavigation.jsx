@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import routes from '@/routes';
@@ -28,11 +28,6 @@ const BottomNavigation = () => {
               rootRouter.map((route) => (
                 <div
                   key={route.key}
-                  className={clsx(
-                    'flex items-center justify-center relative round-scan-container text-white',
-                    route.center ? 'bg-[#770003] rounded-2xl text-[40px] p-2' : 'flex-col gap-1 text-3xl',
-                    isRouteActive(route.path) ? 'text-[#F8F05F]' : ''
-                  )}
                   onClick={async () => {
                     if (route.center && (!token || !isAgreed || !user?.name)) return;
                     if (route.center && !oaId?.followedOA) {

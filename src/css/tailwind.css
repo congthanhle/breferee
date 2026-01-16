@@ -17,7 +17,13 @@
   @apply font-sans;
 }
 
-.ant-form-item-label > label {
+.ant-input:focus,
+.ant-input:hover,
+.ant-input-focused {
+  @apply outline-none border-none shadow-none !important;
+}
+
+/* .ant-form-item-label > label {
   @apply text-base text-white !important;
 }
 
@@ -44,11 +50,6 @@
   @apply border-none !important;
 }
 
-.ant-input:focus,
-.ant-input:hover,
-.ant-input-focused {
-  @apply outline-none border-none shadow-none !important;
-}
 
 .custom-input {
   @apply bg-[#8C000480] text-white !important;
@@ -90,4 +91,4 @@
 
 .ant-select-item-option-selected {
   @apply bg-primary bg-opacity-40 !important;
-}
+} */

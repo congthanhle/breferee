@@ -1,10 +1,10 @@
 {
   "app": {
-    "title": "TH_True_Mart",
-    "headerColor": "#FCE960",
+    "title": "Badminton Score Keeper",
+    "headerColor": "#14b8a6",
     "textColor": "black",
     "leftButton": "back",
-    "actionBarHidden": true,
+    "actionBarHidden": false,
     "hideAndroidBottomNavigationBar": true,
     "hideIOSSafeAreaBottom": true,
     "selfControlLoading": false,

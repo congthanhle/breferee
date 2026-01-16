@@ -1,7 +1,7 @@
-@import './font.css';
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
 * {
-  font-family: DINRoundOT, sans-serif !important;
+  font-family: Google Sans, sans-serif !important;
 }
 
 .section-container {
@@ -54,57 +54,4 @@
   0%   { top: -20%; }
   50%  { top: 120%; }
   100% { top: -20%; }
-}
-
-.text-gold-shadow {
-  text-shadow:
-    0px 4px 1px #BA0006;
-}
-
-.concave-bar {
-  -webkit-mask:
-    radial-gradient(circle 6px at top, transparent 98%, #000 100%),
-    radial-gradient(circle 6px at bottom, transparent 98%, #000 100%),
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: destination-out, destination-out, source-over;
-  mask-composite: exclude, exclude, add;
-}
-
-.sub-card {
-  @apply bg-[#8C000480]  border-2 border-[#81000233];
-}
-
-.dashed-custom, .dashed-gray-custom {
-  @apply relative bg-transparent last:bg-none !important;
-}
-
-.dashed-custom::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 80%;
-  height: 1px;
-  background: linear-gradient(to right, rgba(255,255,255,0.3) 70%, transparent 0);
-  background-size: 20px 1px;
-  background-repeat: repeat-x;
-}
-
-.dashed-custom:last-child::after {
-  display: none;
-}
-
-
-.dashed-gray-custom::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(to right, rgba(0,0,0,0.3) 70%, transparent 0);
-  background-size: 20px 1px;
-  background-repeat: repeat-x;
-}
-
-.dashed-custom:last-child::after {
-  display: none;
 }
